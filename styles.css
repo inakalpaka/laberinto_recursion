@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.laberinto {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Tamaño fijo de 10 columnas */
+    grid-gap: 2px;
+    margin: 20px auto;
+    max-width: 600px; /* Ajusta el ancho máximo del laberinto */
+}
+
+
+.celda {
+    width: auto;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.pared {
+    background-color: #000;
+}
+.caminoErroneo{
+    background-color: red;
+}
+
+.inicio {
+    background-color: green;
+}
+
+.meta {
+    background-color: yellowgreen;
+}
+
+.camino {
+    background-color: yellow;
+}
